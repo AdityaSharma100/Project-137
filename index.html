@@ -1,0 +1,36 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="background.jpg">
+<center>
+  <div id="header">
+   <h1 class="heading">AI Object Detector</h1>
+   <h2 id="note">The name of the object that you put in the input box should match the name of an item present in cocoSSD model</h2>
+  </div>
+  <h3 id="name">Object name:</h3>
+  <input id="input" type="text" placeholder="Type name here">
+  <button class="btn btn-warning" onclick="start()">Start</button>
+  <br><br>
+  <h3 id="status" class="btn btn-danger"></h3>
+  <br><br>
+  <h3 id="object" class="btn btn-success"></h3>
+</center>
+
+<script src="main.js"></script>
+
+</body>
+</html>
